@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+	<center>
+	<h1>JavaScript Challenges</h1>
+	<p>Convert any number into hours and minutes</p>
+</center>
+
+<center>
+
+		<input id="str1" >
+		<br><br>
+		<input id="str2" >
+		<br><br>
+		<button type="button" onclick="myString()">Strings</button>
+	
+	
+<p id="tm"> </p>
+
+</center>
+<script>
+	
+	
+function myString(string) {
+	var s1,s2,text;
+	
+			s1 = document.getElementById("str1").value;
+			s2 = document.getElementById("str2").value;
+		var s1 = {};
+		
+    for (var i=0; i<string.length;i++) {
+        var character = string.charAt(i);
+        if (s1[character]) {
+           s1[character]++;
+        } else {
+           s1[character] = 1;
+        }
+    }
+	for (var i=0; i<string.length;i++) {
+        var character = string.charAt(i);
+        if (s2[character]) {
+           s2[character]++;
+        } else {
+           s2[character] = 1;
+        }
+    }
+
+	    document.getElementById("tm").innerHTML = character;
+};
+</script>
+
+</body>
+</html>
